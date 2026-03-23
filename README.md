@@ -1,4 +1,4 @@
-# TaskFlow
+# TaskManager
 
 TaskFlow is a production-ready Task Manager web application built with React, Express, MongoDB, and JWT authentication. The repository is organized as a clean monorepo so you can develop locally, demo it to recruiters, and deploy the backend/frontend independently.
 
