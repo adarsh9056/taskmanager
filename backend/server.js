@@ -14,7 +14,7 @@ const startServer = async () => {
     await connectDB();
 
     server = app.listen(PORT, () => {
-      console.log(`TaskFlow API listening on port ${PORT}`);
+      console.log(`TaskManager API listening on port ${PORT}`);
     });
   } catch (error) {
     console.error('Unable to start server:', error.message);

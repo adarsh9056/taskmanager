@@ -68,7 +68,7 @@ if (process.env.NODE_ENV !== 'test') {
 app.get('/api/health', (_req, res) => {
   res.status(200).json({
     success: true,
-    message: 'TaskFlow API is healthy.'
+    message: 'TaskManager API is healthy.'
   });
 });
 

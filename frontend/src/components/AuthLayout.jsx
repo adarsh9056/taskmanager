@@ -2,7 +2,7 @@ export default function AuthLayout({ title, subtitle, footer, children }) {
   return (
     <main className="auth-shell">
       <section className="auth-showcase">
-        <p className="eyebrow">TaskFlow</p>
+        <p className="eyebrow">TaskManager</p>
         <h1>Run your work with clarity, not clutter.</h1>
         <p className="showcase-copy">
           A clean full-stack task manager with secure authentication, fast filtering, and

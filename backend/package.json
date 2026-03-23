@@ -1,5 +1,5 @@
 {
-  "name": "taskflow-backend",
+  "name": "taskmanager-backend",
   "version": "1.0.0",
   "description": "Production-ready Task Manager API with JWT auth and MongoDB",
   "main": "server.js",

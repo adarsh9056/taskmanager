@@ -1,5 +1,5 @@
-const ACCESS_TOKEN_KEY = 'taskflow_access_token';
-const REFRESH_TOKEN_KEY = 'taskflow_refresh_token';
+const ACCESS_TOKEN_KEY = 'taskmanager_access_token';
+const REFRESH_TOKEN_KEY = 'taskmanager_refresh_token';
 
 export const getAccessToken = () => localStorage.getItem(ACCESS_TOKEN_KEY);
 

@@ -1,6 +1,6 @@
 # TaskManager
 
-TaskFlow is a production-ready Task Manager web application built with React, Express, MongoDB, and JWT authentication. The repository is organized as a clean monorepo so you can develop locally, demo it to recruiters, and deploy the backend/frontend independently.
+TaskManager is a production-ready Task Manager web application built with React, Express, MongoDB, and JWT authentication. The repository is organized as a clean monorepo so you can develop locally, demo it to recruiters, and deploy the backend/frontend independently.
 
 ## Tech Stack
 
@@ -50,7 +50,7 @@ TaskFlow is a production-ready Task Manager web application built with React, Ex
 │       └── taskValidator.js
 ├── docs
 │   └── postman
-│       └── TaskFlow.postman_collection.json
+│       └── TaskManager.postman_collection.json
 ├── frontend
 │   ├── index.html
 │   ├── package.json
@@ -165,7 +165,7 @@ Create `backend/.env` from the example:
 ```env
 PORT=5000
 NODE_ENV=development
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/taskflow?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/taskmanager?retryWrites=true&w=majority
 CLIENT_URL=http://localhost:5173
 JWT_ACCESS_SECRET=replace-with-a-long-random-string
 JWT_REFRESH_SECRET=replace-with-a-different-long-random-string
@@ -186,8 +186,8 @@ VITE_API_URL=http://localhost:5000/api/v1
 ### 1. Clone and move into the repo
 
 ```bash
-git clone <your-github-repo-url> taskflow
-cd taskflow
+git clone <your-github-repo-url> taskmanager
+cd taskmanager
 ```
 
 ### 2. Configure the backend
@@ -212,7 +212,7 @@ The backend will run on `http://localhost:5000`.
 Open a new terminal tab:
 
 ```bash
-cd /path/to/taskflow/frontend
+cd /path/to/taskmanager/frontend
 npm install
 cp .env.example .env
 open -a TextEdit .env
@@ -255,7 +255,7 @@ npm test
 Import:
 
 ```text
-docs/postman/TaskFlow.postman_collection.json
+docs/postman/TaskManager.postman_collection.json
 ```
 
 Recommended collection variables:
@@ -278,7 +278,7 @@ Recommended collection variables:
 7. Start Command: `npm start`
 8. Add environment variables from `backend/.env.example`.
 9. Set `CLIENT_URL` to your Vercel frontend domain.
-10. Deploy and copy the generated backend URL, for example `https://taskflow-api.onrender.com`.
+10. Deploy and copy the generated backend URL, for example `https://taskmanager-api.onrender.com`.
 
 ### Backend on Railway
 
@@ -327,10 +327,10 @@ The frontend reads `VITE_API_URL` and points Axios to that API base URL. In prod
 ## Suggested GitHub Workflow
 
 ```bash
-git checkout -b codex/taskflow-app
+git checkout -b codex/taskmanager-app
 git add .
-git commit -m "Build production-ready TaskFlow full-stack app"
-git push origin codex/taskflow-app
+git commit -m "Build production-ready TaskManager full-stack app"
+git push origin codex/taskmanager-app
 ```
 
 ## Next Improvements

@@ -1,8 +1,8 @@
 {
   "info": {
     "_postman_id": "5e4e47c6-9b4e-46f4-9bd8-7f1a74e0df81",
-    "name": "TaskFlow API",
-    "description": "Postman collection for TaskFlow authentication and task endpoints.",
+    "name": "TaskManager API",
+    "description": "Postman collection for TaskManager authentication and task endpoints.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
