@@ -2,6 +2,19 @@
 
 TaskManager is a production-ready Task Manager web application built with React, Express, MongoDB, and JWT authentication. The repository is organized as a clean monorepo so you can develop locally, demo it to recruiters, and deploy the backend/frontend independently.
 
+## Live Demo
+
+- Frontend: [https://taskmanager-tau-brown.vercel.app](https://taskmanager-tau-brown.vercel.app)
+- Backend API: [https://taskmanager-api-p6yy.onrender.com/api/health](https://taskmanager-api-p6yy.onrender.com/api/health)
+- GitHub: [https://github.com/adarsh9056/taskmanager](https://github.com/adarsh9056/taskmanager)
+
+## Project Snapshot
+
+- Secure full-stack task manager with JWT access and refresh token authentication
+- User-scoped task CRUD with filtering, search, sorting, and pagination
+- React dashboard with protected routes, loading states, and toast notifications
+- Deployed with Vercel, Render, and MongoDB Atlas
+
 ## Tech Stack
 
 - Frontend: React + Vite + React Router + Axios
@@ -133,6 +146,15 @@ TaskManager is a production-ready Task Manager web application built with React,
 - Server-side validation and structured error handling
 - Postman collection for API testing
 - Basic automated tests
+
+## Production URLs
+
+| Surface | URL |
+| --- | --- |
+| Frontend | `https://taskmanager-tau-brown.vercel.app` |
+| Backend | `https://taskmanager-api-p6yy.onrender.com` |
+| Health Check | `https://taskmanager-api-p6yy.onrender.com/api/health` |
+| Repository | `https://github.com/adarsh9056/taskmanager` |
 
 ## REST API
 
@@ -306,6 +328,19 @@ VITE_API_URL=https://your-backend-domain/api/v1
 7. Update the backend `CLIENT_URL` to the final Vercel URL if needed.
 8. Redeploy the backend after updating CORS settings.
 
+## Current Deployment Setup
+
+- Frontend hosted on Vercel
+- Backend hosted on Render
+- Database hosted on MongoDB Atlas
+- Render backend CORS origin set to `https://taskmanager-tau-brown.vercel.app`
+
+## Production Notes
+
+- Render free web services can spin down after inactivity, so the first request may take longer.
+- Secrets should never be committed to Git. Use Render and Vercel environment variables only.
+- If you rotate your MongoDB password or JWT secrets, update them in Render and redeploy the backend.
+
 ## How Frontend and Backend Connect
 
 The frontend reads `VITE_API_URL` and points Axios to that API base URL. In production:
@@ -323,6 +358,7 @@ The frontend reads `VITE_API_URL` and points Axios to that API base URL. In prod
 - Scalable React dashboard with protected routing and async UX states
 - Cloud-ready deployment flow using MongoDB Atlas, Render/Railway, and Vercel
 - Automated API coverage for critical auth and authorization behavior
+- Live portfolio deployment with a public GitHub repository and production frontend/backend URLs
 
 ## Suggested GitHub Workflow
 
